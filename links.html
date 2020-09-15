@@ -16,7 +16,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-
         <style>
             #round-corner
             {
@@ -26,7 +25,7 @@
             .onHoverDark:hover { background-color:gainsboro !important;}
             .onHoverDark2:hover { background-color:#1abc9c !important; color: white !important;}
 
-            .hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
+            .hrefWithoutDecoration {text-decoration: none !important; color:black}
             .activeCustom {color:#1abc9c;}
 		    .inactiveCustom {color:white;}
 
@@ -36,6 +35,7 @@
             .grow2 { transition: all .2s ease-in-out; }
             .grow2:hover { transform: scale(1.5); }
         </style>
+
 
 
 
@@ -51,9 +51,9 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/portfolio">PORTFOLIO</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/links">LINKS</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link active py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/links">LINKS</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link active py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/contact">CONTACT</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -65,54 +65,63 @@
         <header class="masthead">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h1 class="text-center text-uppercase text-secondary mb-0">Contact Me</h1>
+                <h1 class="text-center text-uppercase text-secondary mb-0">Contact Information</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form action="https://formspree.io/myybgjkn" method="POST" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name" name="Name"/>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                    <div class="col-lg-12">
+                    
+                            <div class="row px-4 pt-4 pb-2">
+                                <h4 class="pb-2"></h4>
                             </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email</label>
-                                    <!-- <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address." name="Reply to"/> -->
-                                    <input type="email" class="form-control" id="email" placeholder="Email" name="Reply to"/>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                                    
+                            <div class="row px-2 pb-4">
+                                        <div class="col-sm-4" >
+                                        <div class="shadow row bg-light mb-5 mt-4 mx-1 grow" id="round-corner" >
+                                        <div class="col">
+
+                                            <h6 class="pt-4 pb-2">GENERAL</h6>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="http://yogeshiitm.github.io/"><img src="images/contact_icons/website.png" width="20px" class="grow2">  Website </a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://www.linkedin.com/in/yogesh-agarwala/"><img src="images/contact_icons/linkedin.png" width="16px" class="grow2">  LinkedIn </a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="mailto:yogeshiitm@outlook.com"><img src="images/contact_icons/email.png" width="16px" class="grow2">  Email ID </a><br><br>
+                                        </div>
+                                        </div>
+                                        </div>
+            
+                                        <div class="col-sm-4" >
+                                        <div class="shadow row bg-light mb-5 mt-4 mx-1 grow" id="round-corner" >
+                                        <div class="col">
+
+                                            <h6 class="pt-4 pb-2">CODING</h6>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://github.com/yogeshiitm"><img src="images/contact_icons/github.png" width="18px" class="grow2">  Github </a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://www.codechef.com/users/yogeshiitm"><img src="images/contact_icons/codechef.png" width="20px" class="grow2">  Codechef </a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://www.hackerrank.com/yogeshiitm"><img src="images/contact_icons/hackerrank.png" width="16px" class="grow2">   Hackerrank </a><br><br>
+                                        </div>
+                                        </div>
+                                        </div>
+                                            
+                                        <div class="col-sm-4" >
+                                        <div class="shadow row bg-light mb-5 mt-4 mx-1 grow" id="round-corner" >
+                                        <div class="col">
+
+                                            <h6 class="pt-4 pb-2">PERSONAL</h6>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://www.instagram.com/yogesh_agrwal_/"><img src="images/contact_icons/instagram.png" width="16px" class="grow2">  Instagram</a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://www.facebook.com/yogesh.agrwala"><img src="images/contact_icons/facebook.png" width="16px" class="grow2">  Facebook </a><br><br>
+                                            <a class="hrefWithoutDecoration py-2 px-0 px-lg-2 rounded onHoverDark2" href="https://twitter.com/yogeshiitm"><img src="images/contact_icons/twitter.png" width="16px" class="grow2">  Twitter </a><br><br>
+                                        </div>
+                                        </div>
+                                        </div>
                             </div>
-                            
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="2" placeholder="Message" required="required" data-validation-required-message="Please enter a message/feedback" name="Message"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-xl" value="Send" type="submit">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </header>
-        
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright © Yogesh Agarwala 2020</small></div>
@@ -156,6 +165,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
