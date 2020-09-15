@@ -19,6 +19,34 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- css for hand wave animation -->
+        <style>
+        .wave {
+            animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+            animation-duration: 2.5s;        /* Change to speed up or slow down */
+            animation-iteration-count: infinite;  /* Never stop waving :) */
+            transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+            display: inline-block;
+          }
+          
+        @keyframes wave-animation {
+              0% { transform: rotate( 0.0deg) }
+             10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+             20% { transform: rotate(-8.0deg) }
+             30% { transform: rotate(14.0deg) }
+             40% { transform: rotate(-4.0deg) }
+             50% { transform: rotate(10.0deg) }
+             60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+            100% { transform: rotate( 0.0deg) }
+          }
+          
+        </style>
+
+
+
+
+
     </head>
     <body id="page-top">
 
@@ -48,7 +76,8 @@
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
                 <!-- Masthead Heading-->
 
-                <h1 class="masthead-heading mb-0">Hi there, I'm Yogesh👋 </h1>
+                <h1 class="masthead-heading mb-0">Hi there, I'm Yogesh<span class="wave">👋</span> </h1>
+                
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -62,16 +91,16 @@
                 
                 <div class="typed-strings" style="display: none">
                     <p>Software Development Enthusiast.</p>
-                    <p>An avid coder.</p>
                     <!-- <p>Passionate about learning new things.</p> -->
-                    <p>Technoholic Nerd.</p>
                     <!-- <p>Enjoy solving challenging problems.</p> -->
                     <p>Passionate about solving challenging problems.</p>
+                    <p>An avid coder.</p>
+                    <!-- <p>Technoholic Nerd.</p> -->
                 </div>
 
                 <!-- <h1 class="hero-header"> -->
                 <h5>
-                    <span class="typed">P</span><span class="typed-cursor">|</span>
+                    <span class="typed">Soft</span><span class="typed-cursor">|</span>
                 </h5>
                 <!-- </h1> -->
         
