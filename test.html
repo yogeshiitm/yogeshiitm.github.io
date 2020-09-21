@@ -21,6 +21,12 @@
                 width:100%;
                 height:100%;
             }
+            .wrapper {
+                min-height: 100%;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
+
             .wave {
                 animation-name: wave-animation;
                 animation-duration: 2.5s;
@@ -80,7 +86,9 @@
             gtag('config', 'UA-176091712-1');
         </script>
     </head>
-    <body id="page-top body">
+
+<body id="page-top">
+    <div class="wrapper">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container"><a class="navbar-brand js-scroll-trigger" href="/portfolio">YOGESH AGARWALA</a>
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
@@ -149,5 +157,6 @@
         <script src="./js/moot.min.js.download"></script><style>a.moot { display: none }</style>
         <script src="./js/assets.js.download"></script>
         <script src="./js/main.js.download"></script>
-    </body>
+    </div>
+</body>
 </html>
