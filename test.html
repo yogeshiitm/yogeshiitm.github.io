@@ -22,15 +22,10 @@
                 min-height: calc(100vh);
 		
             }
-		#header {
-		  height: 20px;
+		section {
+		    min-height: 100vh; /* minus the height of the footer */
 		}
-		#content {
-		  min-height: calc(100vh - 40px);
-		}
-		#footer {
-		  height: 20px;
-		}
+
             .wave {
                 animation-name: wave-animation;
                 animation-duration: 2.5s;
@@ -106,6 +101,7 @@
                 </div>
             </div>
         </nav>
+	<section>
         <header id="content" class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
@@ -128,7 +124,7 @@
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">Pursuing Electrical Engineering at IIT Madras </p>
             </div>
         </header>
-        
+        </section>
         <!-- Copyright Section-->
         <section id="footer" class="copyright py-4 text-center text-white">
             <div >
