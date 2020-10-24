@@ -124,6 +124,15 @@
 
             }
 
+            /* this code is required for AOS animation- to avoid abnormal behavior of navbar while using AOS animaiton
+            https://github.com/michalsnik/aos/issues/481 */
+            section {
+                overflow-x: hidden;
+            }
+            body {
+                overflow-x: hidden;
+            }
+
         </style>
 
         <meta charset="utf-8" />
@@ -216,9 +225,9 @@
                         <p>Passionate problem solver.</p>
                         <p>An avid coder.</p>
                     </div>
-                    <p>
+                    <h6>
                         <span class="typed">Soft</span><span class="typed-cursor">|</span>
-                    </p>
+                    </h6>
                     <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
 
                     <!-- <a href="/projects">

@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="css/styles2.css" rel="stylesheet" />
+        
         <style>
             #body {
                 width: 100%;
@@ -124,6 +125,15 @@
 
             }
 
+            /* this code is required for AOS animation- to avoid abnormal behavior of navbar while using AOS animaiton
+            https://github.com/michalsnik/aos/issues/481 */
+            section {
+                overflow-x: hidden;
+            }
+            body {
+                overflow-x: hidden;
+            }
+
         </style>
 
         <meta charset="utf-8" />
@@ -204,7 +214,7 @@
                 <div class="container d-flex align-items-center flex-column">
                     <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
                     <!-- <h3 class="masthead-heading mb-0">Hi there, I'm Yogesh<span class="wave">👋</span> </h3> -->
-                    <h3>Hi there, I'm Yogesh Agarwala</h3>
+                    <h2>Hi there, I'm Yogesh Agarwala</h2>
                     <div class="divider-custom divider-light">
                         <div class="divider-custom-line"></div>
                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -216,9 +226,9 @@
                         <p>Passionate problem solver.</p>
                         <p>An avid coder.</p>
                     </div>
-                    <p>
+                    <h6>
                         <span class="typed">Soft</span><span class="typed-cursor">|</span>
-                    </p>
+                    </h6>
                     <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
 
                     <!-- <a href="/projects">
