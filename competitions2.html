@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style>
+
+		@media screen
+		and (max-width : 992px) {
+
+			body {
+				background-image: url('images/background/background.jpg');
+			}
+			
+		}
+
+		#round-corner{
+			border-radius: 8px;
+		}
+
+		img.round-corner2{
+			border-radius: 8px 8px 0 0;
+		}
+
+
+		body{
+			margin:0;
+			font-family:georgia,garamond,serif;font-size:14px;
+		}
+		.onHoverDark:hover { background-color: #222222 !important; color: #BABABA !important;}
+		.hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
+		.hrefWithoutDecoration2 {text-decoration: none !important;}
+
+		.activeCustom {color:#FFF}
+		.inactiveCustom {color:#A9A9A9}
+
+		.grow { transition: all .2s ease-in-out; }
+		.grow:hover { transform: scale(1.01); }
+
+		.grow2 { transition: all .2s ease-in-out; }
+		.grow2:hover { transform: scale(1.1); }
+
+
+		#content-desktop {display: block;}
+		#content-mobile {display: none;}
+
+		@media screen and (max-width: 992px) {
+		#content-desktop {display: none;}
+		#content-mobile {display: block;}
+
+		}
+
+
+	</style>
+
+	<link rel="shortcut icon" type="image/jpg" href="images/yogesh_favicon_circular.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Yogesh Agarwala | Competitions">
+	<meta name="author" content="Yogesh Agarwala">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="yogesh, agarwal, yogesh agarwala, electrical engineering, iit madras">
+
+	<meta property="og:title" content="Yogesh Agarwala | IIT Madras">
+	<meta property="og:image" content="/images/yogesh_square.jpg">
+	<meta property="og:description" content="Yogesh Agarwala | Competitions">
+	<meta property="og:url" content="https://yogeshiitm.github.io/competitions">
+
+	<title>Yogesh Agarwala | Competitions</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176091712-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-176091712-1');
+	</script>
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark #101010">
+		<div class="container">
+			<a class="navbar-brand my-2" href="/">Yogesh Agarwala<small class="text-muted"></small></a>
+			<button class="navbar-toggler" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			Menu
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-bars py-2"></i>
+			</button>
+
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/">Home&emsp;</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/projects">Projects&emsp;</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/competitions">Competitions&emsp;</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/achievements">Scholastic Achievements&emsp;</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/certificates">Certificates&emsp;</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/education">Education&emsp;</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" style="display: none" href="/resume">Resume&emsp;</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/about">About Me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 pt-4">
+				<div id="content-desktop">
+					<div class="row py-5 px-4 bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<div class="col text-center">
+							<img class="pb-5 grow2" src="images/yogesh_image.jpeg" width="100%" style="max-width: 200px">
+							<p>
+								<h2>Yogesh Agarwala</h2>
+								<h5><small class="text-muted"> IIT MADRAS | Electrical Engineering'23</small></h5>
+								I'm a second-year undergraduate, pursuing B.Tech in Electrical Engineering (2019-2023) at IIT Madras and have a great passion for software development and robotics.<br>
+								<br>
+								Currently, I'm working with Team Sahaay at Centre for Innovation (CFI), IITM, for developing a prototype of an Electronic Travel Aid, using deep learning and computer vision, that attempts to solve the real-life challenges faced by Visually Impaired Peoples while travelling on the streets.<br>
+							</p>
+						</div>
+					</div>
+		
+					<div class="row pt-5 pb-3 pl-3 bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<div class="col">
+							<h4 class="pb-2">Contact Information</h4>
+							<p>
+		
+								<a class="hrefWithoutDecoration" href="http://yogeshiitm.github.io/"><img src="images/contact_icons/website.png" width="20px" class="grow2">  Portfolio </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.linkedin.com/in/yogeshiitm/"><img src="images/contact_icons/linkedin.png" width="16px" class="grow2">  LinkedIn </a><br><br>
+								<a class="hrefWithoutDecoration" href="mailto:yogeshiitm@outlook.com"><img src="images/contact_icons/email.png" width="16px" class="grow2">  Email ID </a><br><br>
+		
+								<hr style="width:50%;text-align:left;margin-left:0">
+		
+								<a class="hrefWithoutDecoration" href="https://github.com/yogeshiitm"><img src="images/contact_icons/github.png" width="18px" class="grow2">  Github </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.codechef.com/users/yogeshiitm"><img src="images/contact_icons/codechef.png" width="20px" class="grow2">  Codechef </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.hackerrank.com/yogeshiitm"><img src="images/contact_icons/hackerrank.png" width="16px" class="grow2">   Hackerrank </a><br><br>
+								
+								<hr style="width:50%;text-align:left;margin-left:0">
+		
+								<a class="hrefWithoutDecoration" href="https://www.instagram.com/yogesh_agrwal_/"><img src="images/contact_icons/instagram.png" width="16px" class="grow2">  Instagram </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.facebook.com/yogeshiitm"><img src="images/contact_icons/facebook.png" width="16px" class="grow2">  Facebook </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://twitter.com/yogeshiitm"><img src="images/contact_icons/twitter.png" width="16px" class="grow2">  Twitter </a><br><br>
+		
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-8">
+				<div class="shadow row bg-light mb-5 mt-4 mx-1 grow" id="round-corner">
+					<!-- <a href="/images/flipkart_grid.jpg"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a> -->
+					<a href="https://drive.google.com/file/d/1U3EPf1KGQhkscqLRG3wECUN9asTPw6pk/view?usp=sharing"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a>
+					<div class="px-4 pt-5 pb-4">
+						<a class="hrefWithoutDecoration" href="https://drive.google.com/file/d/1U3EPf1KGQhkscqLRG3wECUN9asTPw6pk/view?usp=sharing"><h3>Flipkart GRiD 2.0 <small class="text-muted">| Robotics Challenge | Semi-Finalists </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
+						<h6 class="result-card__subtitle">
+								<span class="education__item education__item--degree-info">Autonomous Pick and Place Robot</span>
+						</h6>
+						<p>June 2020 – Sept 2020</p>
+						<p>My team and I were among the 41 semi-finalists of the 1000+ teams that have participated. <br>
+						We designed a versatile picking robot, which could pick various types of small items (&#60;2kg) placed in different orientations from a grid of shelves and stow it into a designated area, without compromising on speed. </p>
+						<a href="https://drive.google.com/file/d/1U3EPf1KGQhkscqLRG3wECUN9asTPw6pk/view?usp=sharing" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to view the 3D design</button>
+					</div>
+				</div>
+
+				<div class="shadow row bg-light mb-5 mt-4 mx-1 grow" id="round-corner">
+					<a href="/images/techsoc.jpeg"><img src="images/micromouse.jpg" width="100%" class="round-corner2"></a>
+					<div class="px-4 pt-5 pb-4">
+						<a class="hrefWithoutDecoration" href="/images/techsoc.jpeg"><h3>IIT Madras TechSoc <small class="text-muted">| Robotics Challenge </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
+						<h6 class="result-card__subtitle">
+								<span class="education__item education__item--degree-info">Micro Mouse Maze Challenge</span>
+						</h6>
+						<p>Jan 2020 - Feb 2020</p>
+						<p>I was a member of our hostel team which participated in this inter-hostel autonomous robotics challenge at IIT Madras.<br>
+						We used arduino and ultrasonic sensors to build an autonomous, self-contained robot, The Micromouse, capable of getting to the centre of a maze from any specified point.</p>
+						<a href="/images/techsoc.jpeg" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to view the bot</button>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		/* pagination */
+		.nav-links {
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
+
+		.current {
+			color: #000 !important;
+		}
+
+		.page-numbers{
+			color: #6A67CE;
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+		.page-numbers:hover {
+			color: #2f9af2;
+			text-decoration: none;
+		}
+
+		/* previous/next buttons */
+		.previousnext {
+		text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;
+		}
+
+		.previousnext:hover {
+		background-color: #ddd;
+		color: black;
+		}
+
+		.previous {
+		background-color: #f1f1f1;
+		color: black;
+		}
+
+		.next {
+		background-color: black;
+		color: white;
+		float: right
+		}
+
+	</style>
+
+	<div class="container my-5">
+		<div class="nav-links">
+			<a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo;</a>
+			<!-- <a class="page-numbers" href="/projects"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
+			<a class="page-numbers" href="/projects">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+			<a class="page-numbers current">2&nbsp;&nbsp; </a>
+			<a class="page-numbers" href="/achievements">3&nbsp;&nbsp; </a>
+			<span class="page-numbers dots">…&nbsp;&nbsp;</span>
+			<a class="page-numbers" href="/about">6&nbsp;&nbsp;&nbsp; </a>
+			<!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a> -->
+			<a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2"> &raquo;</a>
+		</div>
+	</div>
+
+
+	<!-- <div class="container mx-auto mt-2 mb-5">
+		<a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo; Previous</a>
+		<a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2">Next &raquo;</a>
+	</div> -->
+	
+
+
+	<script src="https://kit.fontawesome.com/607f62eb6e.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/scripts.js"></script>
+	<a id="back-to-top" href="#" class="btn btn-secondary btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+</html>
