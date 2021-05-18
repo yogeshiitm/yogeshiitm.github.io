@@ -259,6 +259,8 @@
                         </li>
                         <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/about">About Me</a>
                         </li>
+                        <li class="nav-item mx-0 mx-lg-1  py-3 px-0 px-lg-3" id="content-mobile"><a href="https://www.linkedin.com/in/yogeshiitm/" class="hrefWithoutDecoration3"> <i class="fab fa-linkedin mr-2"></i>Linkedin</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -346,16 +348,23 @@
                     }
             
                     .current {
-                        color: #000 !important;
+                        /* color: #000 !important;*/ 
+                        color: #1abc9c !important;
                     }
-            
-                    .page-numbers{
-                        color: #6A67CE;
+
+                    .page-numbers , .dots{
+                        /* color: #6A67CE;*/ 
+                        color: white;
                         font-size: 20px;
                         font-family: sans-serif;
                     }
                     .page-numbers:hover {
-                        color: #2f9af2;
+                        /* color: #2f9af2;*/
+                        color: #1abc9c;
+                        text-decoration: none;
+                    }
+                    .dots:hover {
+                        color: white !important;
                         text-decoration: none;
                     }
                     /* previous/next buttons */
@@ -402,7 +411,7 @@
         </div>
 
         <div id="content-mobile">
-            <section class="bg-light mt-0 pt-0">
+            <section class="bg-secondary mt-0 pt-0">
                 <style>
                     /* pagination */
                     .nav-links {
@@ -416,25 +425,30 @@
                         color: #1abc9c !important;
                     }
             
-                    .page-numbers{
+                    .page-numbers , .dots{
                         /* color: #6A67CE;*/ 
                         color: white;
                         font-size: 20px;
                         font-family: sans-serif;
                     }
                     .page-numbers:hover {
-                        /* color: #2f9af2;*/ 
+                        /* color: #2f9af2;*/
+                        color: #1abc9c;
+                        text-decoration: none;
+                    }
+                    .dots:hover {
+                        color: white !important;
                         text-decoration: none;
                     }
                 </style>
 
-                <div class="container mb-5 mt-0">
+                <div class="container mb-2 mt-2">
                     <div class="nav-links">
                         <!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
                         <a class="page-numbers current">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
                         <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
                         <a class="page-numbers" href="/competitions">3&nbsp;&nbsp; </a>
-                        <span class="page-numbers dots">…&nbsp;&nbsp;</span>
+                        <span class="dots">…&nbsp;&nbsp;</span>
                         <a class="page-numbers" href="/about">7&nbsp;&nbsp;&nbsp; </a>
                         <a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
                     </div>
