@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Yogesh Agarwala | Electrical Engineering Student | IIT Madras" />
+        <meta name="author" content="Yogesh Agarwala" />
+        <meta name="keywords" content="yogesh, agarwal, yogesh agarwala, electrical engineering, iit madras" />
+
+        <meta property="og:title" content="Yogesh Agarwala | Electrical Engineering Student | IIT Madras">
+        <meta property="og:image" content="/images/avataaar.png">
+        <meta property="og:description" content="Yogesh Agarwala's Portfolio">
+        <meta property="og:url" content="https://yogeshiitm.github.io/">
+
+        <title>Yogesh Agarwala | IIT Madras</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/styles2.css" rel="stylesheet" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <style>
+            #body {
+                width: 100%;
+                height: 100%;
+            }
+            html{
+                width:100%;
+                height:100%;
+            }
+            body{
+                width:100%;
+                height:100%;
+                background-color: #1a252f;
+                /* background-color: #02203c; */
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            .wave {
+                animation-name: wave-animation;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+                display: inline-block;
+            }
+            @keyframes wave-animation {
+                0% { transform: rotate( 0.0deg) }
+                10% { transform: rotate(14.0deg) }
+                20% { transform: rotate(-8.0deg) }
+                30% { transform: rotate(14.0deg) }
+                40% { transform: rotate(-4.0deg) }
+                50% { transform: rotate(10.0deg) }
+                60% { transform: rotate( 0.0deg) }
+                100% { transform: rotate( 0.0deg) }
+            }
+
+            #round-corner
+            {
+                border-radius: 8px;
+            }
+
+            .onHoverDark:hover { background-color:gainsboro !important;}
+            .onHoverDark2:hover { background-color:#1abc9c !important; color: white !important;}
+
+            .hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
+            .hrefWithoutDecoration2 {text-decoration: none !important; color:#FFF !important;}
+            .hrefWithoutDecoration3 {text-decoration: none !important;}
+
+            .activeCustom {color:#1abc9c;}
+		    .inactiveCustom {color:white;}
+
+            .grow { transition: all .2s ease-in-out; }
+            .grow:hover { transform: scale(1.05); }
+
+            .grow2 { transition: all .2s ease-in-out; }
+            .grow2:hover { transform: scale(1.5); }
+
+
+            .violet{
+                background-color: #626ee3;
+                color: white;
+            }
+
+            .black{
+                background-color: rgb(29, 29, 29);
+            }
+
+            .darkblue{
+                background-color: #02203c;
+            }
+
+            .onhoverdarkviolet:hover {
+                background-color: rgb(71, 71, 71);
+                color: white;
+            }
+
+            .newbtn {
+                padding: 10px 20px;
+                border: 1px solid #FF4081;
+                color:#FF4081;
+                display: inline-block;
+                position: relative;
+                -webkit-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                overflow: hidden;
+            }
+            .newbtn:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 1px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: #FF4081;
+                -webkit-transition: -webkit-transform 0.2s ease;
+                        transition: transform 0.2s ease;
+                z-index: 0;
+                opacity: 0;
+            }
+            .newbtn span {
+                position: relative;
+                z-index: 5;
+            }
+            .newbtn:hover {
+                color: #FFF;
+            }
+            .newbtn:hover:before {
+                -webkit-transform: scaleX(200);
+                    -ms-transform: scaleX(200);
+                        transform: scaleX(200);
+                opacity: 1;
+            }
+
+            .purple-text-color {
+                /* color: rgb(204, 214, 246); */
+                color: white;
+            }
+            .red-text-color {
+                color: #FF4081 !important;
+            }
+
+        /* scrollbar */
+            ::-webkit-scrollbar {
+            width: 5px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            /* background:  #f1f1f1; */
+            background:  transparent;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: #888;
+
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            }
+
+
+            #content-desktop {display: block;}
+            #content-mobile {display: none;}
+
+
+            @media screen and (max-width: 1024px) {
+            #content-desktop {display: none;}
+            #content-mobile {display: block;}
+            }
+
+            /* this code is required for AOS animation- to avoid abnormal behavior of navbar while using AOS animaiton
+            https://github.com/michalsnik/aos/issues/481 */
+            section {
+                overflow-x: hidden;
+            }
+            body {
+                overflow-x: hidden;
+            }
+            .dropdown-content{
+                background-color: #2C3E50;
+                
+            }
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a:hover {
+            color: #1abc9c;
+            background-color: #2C3E50;
+            }
+            .dropdown-content a {
+            font-size: 14px;
+            color:white;
+            text-decoration: none;
+            }
+
+        </style>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176091712-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-176091712-1');
+        </script>
+    </head>
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-xl bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">YOGESH AGARWALA</a>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item mx-0 mx-lg-1  py-3 px-0 px-lg-3" id="content-desktop"><a href="https://www.linkedin.com/in/yogeshiitm/" class="hrefWithoutDecoration3"> <i class="fab fa-linkedin mr-2"></i>Linkedin</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1 dropdown" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" href="/projects" data-toggle="dropdown">PORTFOLIO</a>
+                            <div class="dropdown-menu dropdown-content mt-0">
+                                <a class="dropdown-item" href="/projects">Projects</a>
+                                <a class="dropdown-item" href="/competitions">Competitions</a>
+                                <div class="dropdown-divider ml-4 mr-4"></div>
+
+                                <a class="dropdown-item" href="/achievements">Achievements</a>
+                                <a class="dropdown-item" href="/certifications">Certifications</a>
+                                <div class="dropdown-divider ml-4 mr-4"></div>
+
+                                <a class="dropdown-item" href="/education">Education</a>
+                                <a class="dropdown-item" href="/about">About ME</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item mx-0 mx-lg-1" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#links">LINKS</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
+                        </li> -->
+
+
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/projects">Projects</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/competitions">Competitions</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/achievements">Scholastic Achievements</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/certifications">Certifications</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/education">Education</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/about">About Me</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1  py-3 px-0 px-lg-3" id="content-mobile"><a href="https://www.linkedin.com/in/yogeshiitm/" class="hrefWithoutDecoration3"> <i class="fab fa-linkedin mr-2"></i>Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <header id="body" class="masthead background-color text-white text-center"> -->
+        <header class="masthead background-color purple-text-color text-center" style="min-height: 100vh;">
+            <div id="content-desktop">
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
+                    <!-- <h3 class="masthead-heading mb-0">Hi there, I'm Yogesh<span<span class="wave">👋</span> </h3> -->
+                    <h1>Hi there, I'm Yogesh Agarwala<span class="wave">👋🏻</span> </h1>
+                    <!-- <h1 data-aos="zoom-in">Hi there, I'm Yogesh Agarwala</h1> -->
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+
+                    <div class="typed-strings" style="display: none">
+                        <p>Software Development Enthusiast.</p>
+                        <p>Passionate problem solver.</p>
+                        <p>An avid coder.</p>
+                    </div>
+                    <h5>
+                        <span class="typed">Soft</span><span class="typed-cursor">|</span>
+                    </h5>
+                    <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
+
+                    <!-- <a href="/projects">
+                        <button class="my-3 btn violet onhoverdarkviolet">
+                            My Projects
+                        </button>
+                    </a> -->
+
+                    <a href="/projects" class="newbtn hrefWithoutDecoration2">
+                        <span>My Projects</span>
+                    </a>
+                </div>
+            </div>
+            <div id="content-mobile">
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
+                    <!-- <h3 class="masthead-heading mb-0">Hi there, I'm Yogesh<span class="wave">👋</span> </h3> -->
+                    <h3>Hi there, I'm Yogesh Agarwala<span class="wave">👋🏻</span> </h3>
+                    <!-- <h3 data-aos="zoom-in">Hi there, I'm Yogesh Agarwala</h3> -->
+                    <div class="divider-custom divider-light">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+
+                    <div class="typed-strings" style="display: none">
+                        <p>Software Development Enthusiast.</p>
+                        <p>Passionate problem solver.</p>
+                        <p>An avid coder.</p>
+                    </div>
+                    <h6>
+                        <span class="typed">Soft</span><span class="typed-cursor">|</span>
+                    </h6>
+                    <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
+
+                    <!-- <a href="/projects">
+                        <button class="my-3 btn violet onhoverdarkviolet">
+                            My Projects
+                        </button>
+                    </a> -->
+
+                    <a href="/projects" class="newbtn hrefWithoutDecoration2">
+                        <span>My Projects</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="content-desktop">
+            <section class="bg-secondary mt-0 pt-0">
+                <style>
+                    /* pagination */
+                    .nav-links {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                    }
+            
+                    .current {
+                        /* color: #000 !important;*/ 
+                        color: #1abc9c !important;
+                    }
+
+                    .page-numbers , .dots{
+                        /* color: #6A67CE;*/ 
+                        color: white;
+                        font-size: 20px;
+                        font-family: sans-serif;
+                    }
+                    .page-numbers:hover {
+                        /* color: #2f9af2;*/
+                        color: #1abc9c;
+                        text-decoration: none;
+                    }
+                    .dots:hover {
+                        color: white !important;
+                        text-decoration: none;
+                    }
+                    /* previous/next buttons */
+                    /* .previousnext {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 8px 16px;
+                    }
+            
+                    .previousnext:hover {
+                    background-color: #ddd;
+                    color: black;
+                    }
+            
+                    .previous {
+                    background-color: #f1f1f1;
+                    color: black;
+                    }
+            
+                    .next {
+                    background-color: black;
+                    color: white;
+                    float: right
+                    } */
+                </style>
+
+                <div class="container mb-2 mt-2">
+                    <div class="nav-links">
+                        <!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
+                        <a class="page-numbers current">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+                        <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
+                        <a class="page-numbers" href="/competitions">3&nbsp;&nbsp; </a>
+                        <span class="page-numbers dots">…&nbsp;&nbsp;</span>
+                        <a class="page-numbers" href="/about">7&nbsp;&nbsp;&nbsp; </a>
+                        <a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="container mx-auto mt-2 mb-5">
+                    <a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo; Previous</a>
+                    <a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2">Next &raquo;</a>
+                </div> -->
+            </section>
+        </div>
+
+        <div id="content-mobile">
+            <section class="bg-secondary mt-0 pt-0">
+                <style>
+                    /* pagination */
+                    .nav-links {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                    }
+            
+                    .current {
+                        /* color: #000 !important;*/ 
+                        color: #1abc9c !important;
+                    }
+            
+                    .page-numbers , .dots{
+                        /* color: #6A67CE;*/ 
+                        color: white;
+                        font-size: 20px;
+                        font-family: sans-serif;
+                    }
+                    .page-numbers:hover {
+                        /* color: #2f9af2;*/
+                        color: #1abc9c;
+                        text-decoration: none;
+                    }
+                    .dots:hover {
+                        color: white !important;
+                        text-decoration: none;
+                    }
+                </style>
+
+                <div class="container mb-2 mt-2">
+                    <div class="nav-links">
+                        <!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
+                        <a class="page-numbers current">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+                        <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
+                        <a class="page-numbers" href="/competitions">3&nbsp;&nbsp; </a>
+                        <span class="dots">…&nbsp;&nbsp;</span>
+                        <a class="page-numbers" href="/about">7&nbsp;&nbsp;&nbsp; </a>
+                        <a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- <div id="content-desktop">
+            <div class="copyright py-4 text-center text-white">
+                <div class="container"><small>Copyright © Yogesh Agarwala 2020</small></div>
+            </div>
+        </div> -->
+
+
+        <div class="scroll-to-top position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts2.js"></script>
+
+        <script src="./js/moot.min.js.download"></script><style>a.moot { display: none }</style>
+        <script src="./js/assets.js.download"></script>
+        <script src="./js/main.js.download"></script>
+
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <script>
+            $(document).ready(function() {
+             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+            });
+        </script>
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+            })
+        </script>
+
+    </body>
+</html>
