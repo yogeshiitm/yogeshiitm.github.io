@@ -10,11 +10,9 @@
 
 		@media screen
 		and (max-width : 992px) {
-
 			body {
 				background-image: url('images/background/background.jpg');
 			}
-			
 		}
 
 		#round-corner{
@@ -103,13 +101,62 @@
 		gtag('config', 'UA-176091712-1');
 	</script>
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark #101010">
+
+    <div class="container coverpage">
+        <div class="row intro">
+            <div class="col-lg-4 col-md-5 order-md-12 holder">
+                <img src="images/yogesh.jpg">
+            </div>
+
+            <div class="col-lg-8 col-md-7 order-md-1">
+                <div class="vcenter">
+                    <div class="greeting">
+                        <div>Hi there!</div>
+                        <div>I'm
+                            <span style="font-weight: 1000; color: #2f2442;">Yogesh Agarwala</span>
+                        </div>
+                    </div>
+                    <span class="txt-rotate" data-period="800"
+                        data-rotate='["Software Engineer","Competitive Programmer","IITian"]'>S</span>
+                    <div class="small-separator"></div>
+                    <div class="desc">
+                        <!-- I'm a third-year undergraduate, pursuing B.Tech at IIT Madras and an incoming Software Engineering Intern'22 at Salesforce.<br> -->
+                        I'm a third-year undergraduate at IIT madras.<br>
+                        Incoming SWE Intern @Salesforce
+                        || Specialist on <a target="_blank" href="https://codeforces.com/profile/yogeshiitm" class="links hvr-shrink">Codeforces</a> 
+                        || 4 star coder on <a target="_blank" href="https://www.codechef.com/users/yogeshiitm" class="links hvr-shrink">Codechef</a><br>
+
+                        <!-- <br>Find my recent work here: <a href="./projects" class="links hvr-grow">Projects</a>
+                         -->
+                    </div>
+                    <br>
+                    
+                    <a href="/projects" class="newbtn hrefWithoutDecoration">
+                        <span>My Projects</span>
+                    </a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="content-mobile">
 		<div class="container">
-			<a class="navbar-brand my-2" href="/" id="content-desktop">Yogesh Agarwala<small class="text-muted"></small></a>
+			<!-- <a class="navbar-brand my-2" href="/" id="content-desktop">Yogesh Agarwala<small class="text-muted"></small></a> -->
 			<a class="navbar-brand my-2" href="/" id="content-mobile">HOMEPAGE<small class="text-muted"></small></a>
 			<button class="navbar-toggler" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			Menu
@@ -149,289 +196,42 @@
 	</nav>
 
 			
-	<div class="container">
+	<div class="container" id="content-mobile">
 		<div class="row">
 			<div class="col-lg-4 pt-4">
-				<!-- <div id="content-desktop"> -->
-					<div class="row py-5 px-4 bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<div class="col text-center">
-							<img class="pb-5 grow2" src="images/yogesh.jpg" width="100%" style="max-width: 200px">
-							<p>
-								<h2>Yogesh Agarwala</h2>
-								<h5><small class="text-muted"> IIT MADRAS | Electrical Engineering'23</small></h5>
-								I'm a third-year undergraduate, pursuing B.Tech in Electrical Engineering at <a href="https://twitter.com/iitmadras" style="text-decoration: none !important;">IIT Madras</a> and an upcoming Software Engineering Intern at <a href="https://twitter.com/salesforce" style="text-decoration: none !important;">Salesforce</a>. I am a keen coder, passionate problem solver and a software development enthusiast.<br>
-								<br>
-								Apart from this, I am currently working with Team Sahaay at Center For Innovation (CFI), IITM, to develop an Electronic Travel Aid that attempts to solve the real-life challenges faced by visually impaired people while travelling on the streets.<br>
-							</p>
-						</div>
-					</div>
+                <div class="row py-5 px-4 bg-light mb-5 shadow mx-1 grow" id="round-corner">
+                    <div class="col text-center">
+                        <img class="pb-5 grow2" src="images/yogesh.jpg" width="100%" style="max-width: 200px">
+                        <p>
+                            <h2>Yogesh Agarwala</h2>
+                            <h5><small class="text-muted"> IIT MADRAS | Electrical Engineering'23</small></h5>
+                            I'm a third-year undergraduate, pursuing B.Tech in Electrical Engineering at <a href="https://twitter.com/iitmadras" style="text-decoration: none !important;">IIT Madras</a> and an upcoming Software Engineering Intern at <a href="https://twitter.com/salesforce" style="text-decoration: none !important;">Salesforce</a>. I am a keen coder, passionate problem solver and a software development enthusiast.<br>
+                            <br>
+                            Apart from this, I am currently working with Team Sahaay at Center For Innovation (CFI), IITM, to develop an Electronic Travel Aid that attempts to solve the real-life challenges faced by visually impaired people while travelling on the streets.<br>
+                        </p>
+                    </div>
+                </div>
 
-					<div id="content-mobile">
-						<div class="row pt-5 pb-3 pl-3 bg-light mb-5 mt-4 shadow mx-1 grow" id="round-corner">
-							<div class="col">
-								<h4 class="pb-2">Menu</h4>
-								<hr style="width:50%;text-align:left;margin-left:0"> 	
-								<p>
-	
-									<a class="hrefWithoutDecoration" href="/projects"> Projects </a><br><br>
-									<a class="hrefWithoutDecoration" href="/achievements"> Achievements </a><br><br>
-									<a class="hrefWithoutDecoration" href="/education"> Education </a><br><br>
-									<a class="hrefWithoutDecoration" href="/contact"> Connect with me </a><br><br>
-								</p>
-							</div>
-						</div>
-					</div>
+
+                <div class="row pt-5 pb-3 pl-3 bg-light mb-5 mt-4 shadow mx-1 grow" id="round-corner">
+                    <div class="col">
+                        <h4 class="pb-2">Menu</h4>
+                        <hr style="width:50%;text-align:left;margin-left:0"> 	
+                        <p>
+
+                            <a class="hrefWithoutDecoration" href="/projects"> Projects </a><br><br>
+                            <a class="hrefWithoutDecoration" href="/achievements"> Achievements </a><br><br>
+                            <a class="hrefWithoutDecoration" href="/education"> Education </a><br><br>
+                            <a class="hrefWithoutDecoration" href="/contact"> Connect with me </a><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 					
-					<div id="content-desktop">
-					<div class="row pt-5 pb-3 pl-3 bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<div class="col">
-							<h4 class="pb-2">Contact Information</h4>
-							<p>
-		
-								<!-- <a class="hrefWithoutDecoration" href="http://yogeshiitm.github.io/"><img src="images/contact_icons/website.png" width="20px" class="grow2">  Portfolio </a><br><br> -->
-								<a class="hrefWithoutDecoration" href="https://yogeshiitm.page.link/linkedin"><img src="images/contact_icons/linkedin.png" width="16px" class="grow2">  LinkedIn </a><br><br>
-								<a class="hrefWithoutDecoration" href="https://yogeshiitm.page.link/youtube"><img src="images/contact_icons/youtube.png" width="16px" class="grow2">  Youtube </a><br><br>
-								<a class="hrefWithoutDecoration" href="mailto:yogeshiitm@outlook.com"><img src="images/contact_icons/email.png" width="16px" class="grow2">  Email </a><br><br>
-		
-								<hr style="width:50%;text-align:left;margin-left:0">
-		
-								<a class="hrefWithoutDecoration" href="https://github.com/yogeshiitm"><img src="images/contact_icons/github.png" width="18px" class="grow2">  Github </a><br><br>
-								<a class="hrefWithoutDecoration" href="https://www.codechef.com/users/yogeshiitm"><img src="images/contact_icons/codechef.png" width="20px" class="grow2">  Codechef </a><br><br>
-								<a class="hrefWithoutDecoration" href="https://www.hackerrank.com/yogeshiitm"><img src="images/contact_icons/hackerrank.png" width="16px" class="grow2">   Hackerrank </a><br><br>
-								
-								<hr style="width:50%;text-align:left;margin-left:0">
-		
-								<a class="hrefWithoutDecoration" href="https://www.instagram.com/yogesh_agrwal_/"><img src="images/contact_icons/instagram.png" width="16px" class="grow2">  Instagram </a><br><br>
-								<a class="hrefWithoutDecoration" href="https://www.facebook.com/yogeshiitm"><img src="images/contact_icons/facebook.png" width="16px" class="grow2">  Facebook </a><br><br>
-								<a class="hrefWithoutDecoration" href="https://twitter.com/yogeshiitm"><img src="images/contact_icons/twitter.png" width="16px" class="grow2">  Twitter </a><br><br>
-		
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-8">
-				<div id="content-desktop">
-
-					<div class="row bg-light mb-5 mt-4 shadow mx-1 grow" id="round-corner">
-						<!-- <a href="/images/flipkart_grid.jpg"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a> -->
-						<!-- <a href="https://youtu.be/0v2HDx5x9GE"><img src="images/techhd.jpg" width="100%" style="border-radius: 8px 8px 8px 8px;"></a> -->
-						<a href="https://youtu.be/0v2HDx5x9GE"><img src="images/techhd.jpg" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href="https://youtu.be/0v2HDx5x9GE"><h3>Covid-19 vaccine delivery priority <small class="text-muted">| EY Techathon  </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
-							<h6 class="result-card__subtitle">
-									<span class="education__item education__item--degree-info">Team TechHd - <a href="/images/techhd-team.jpg" style="text-decoration: none !important;">Meet the Team <i class="fa fa-external-link" style="font-size:10px"></i></a></span>
-							</h6>
-							<p>Dec 2020 – Present</p>
-							<p>Here we have tried to help the government make informed decisions around epidemiological and vaccine supply circumstances by predicting India's more critical segments that need to be catered with vaccine deliveries as prior as possible. <br>
-								● We went through various census report estimates, WHO reports, and other state websites to fetch and combine all these data features and made our datasets.<br>
-								● We then run our ML clustering algorithms through all the features and load them into our ranking algorithms (considering several metrics and features) to determine the Importance and urgency of vaccine deliveries in each state.</p>
-							<!-- <ul>
-								<li>
-									We went through various census report estimates, WHO reports, and other state websites to fetch and combine all these data features and made our datasets.
-								</li>
-								<li>
-									We then run our ML clustering algorithms through all the features and load them into our ranking algorithms (considering several metrics and features) to determine the Importance and urgency of vaccine deliveries in each state.
-								</li>
-							</ul> -->
-							<div id="content-desktop">
-								<!-- <a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View the Webapp</a> -->
-								<a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a>
-								<a href="https://github.com/yogeshiitm/EY-Techathon" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View github repository</button>
-							</div>
-							<div id="content-mobile">
-								<!-- <a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View the Webapp</a><br> -->
-								<a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a><br>
-								<a href="https://github.com/yogeshiitm/EY-Techathon" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View github repository</button>
-							</div>
-							
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href="/images/logo.jpg"><img src="images/vision.jpg" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href="/images/poster.jpg"><h2>Project Vision: Rediscovering Mobility For Blind <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>April 2020 - Present</p>
-							The idea is to develop an Electronic Travel Aid for the Visually Challenged Peoples, to overcome the hurdles they face while using a traditional stick. It uses ultrasonic sensors and camera to detect obstacles through computer vision and then notifies the user about it through distinct vibratory patterns. And thus enables the user to determine a safe path without colliding with over-hanging and protruding objects. Further implementations of the device<span id="dots1">...</span><span id="more11"> will be:</span>
-
-							<div id="more12">
-								<br><br>
-								<ul>
-									<li><b>Potholes detection:</b><br>Pothole Detection can be done using ultrasonic sensor or an accelerometer sensor. </li>
-									<li><b>Water detection:</b><br>We will use a water sensor that activates a distinct buzzer if it detects water.</li>
-									<li><b>Navigation:</b><br>GPS+GSM module in the device will help in navigating from one place to other.</li>
-									<li><b>Locating the stick:</b><br>Installing RF module in the device and then using a mobile application we can ring a buzzer on the stick which will them to find it. </li>
-								</ul>
-							</div>
-
-							<small>
-								<button class="newbutton" onclick="myFunction1()" id="myBtn1">read more</button>
-							</small>
-							<br><br>
-							<a href="https://youtu.be/acc7wHFKoWU" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a>
-							<button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/pdf/Project_Vision.pdf';">Documentation</button>
-							<a href="https://github.com/yogeshiitm/Project-Vision" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
-							<!-- <button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/pdf/Project_Vision.pdf';">Continue Reading</button> -->
-						</div>
-					</div>
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<!-- <a href="/images/flipkart_grid.jpg"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a> -->
-						<a href="https://youtu.be/XVR-wszVpO4"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href=""><h3>Flipkart GRiD 2.0 <small class="text-muted">| Robotics Challenge | Semi-Finalists </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
-							<h6 class="result-card__subtitle">
-									<span class="education__item education__item--degree-info">Autonomous Pick and Place Robot</span>
-							</h6>
-							<p>June 2020 – Sept 2020</p>
-							<p>My team and I were among the 41 semi-finalists of the 1000+ teams that have participated. <br>
-							We designed a versatile picking robot, which could pick various types of small items (&#60;2kg) placed in different orientations from a grid of shelves and stow it into a designated area, without compromising on speed. </p>
-							<a href="https://youtu.be/XVR-wszVpO4" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View on Youtube</button>
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href="https://yogeshiitm.github.io/scientific-calculator/"><img src="images/calculator.png" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href="https://yogeshiitm.github.io/scientific-calculator/"><h2>Javascript Scientific calculator <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Last Updated: 23rd Sept 2020</p>
-							This is an online javascript scientific calculator, designed and coded by me. The input can be a <b>multiple function</b> expression, just like a physical scientific calculator. The calculator is coded to handle almost all possible errors, e.g. it will <b>automatically</b> insert a multiplication sign if you forget to write one. The back button in the calculator is also designed to work <b>smartly</b>, e.g. if the back button is pressed after doing a calculation then it will act as a clear button and will delete the entire string from the input text area, but at other times it will delete only the last character from the input expression.<span id="dots2">..</span>
-
-							<span id="more21">
-
-								<span id="content-mobile">
-									<br>
-								</span>
-
-								Below are a <b>few examples</b> of how the calculator intelligently interprets a user's inputs even if proper parenthesis or multiplication signs are not used, instead of displaying an error:
-							</span>
-
-							<div id="more22">
-								<br><br>
-								<ul>
-									<li>15√(3+5!7π)sin(60°)^ln(log(5)e)7! → 15× √(3+5!×7×π) × sin(60°)<sup>ln(log(5)×e)</sup> × 7!</li>
-									<li>3sin(60×4 → 3 × sin(60×4) → 3 × sin (240)</li>
-									<li>3sin(60)4 → 3 × sin(60) ×4</li>
-									<li>4²3²√(5+6 → 4²×3²×√(5+6).</li>
-									<li>4²3²√(5)6 → 4²×3²×√(5) × 6</li>
-									<li>4%3 → 4% × 3 → 0.04 × 3</li>
-									<li>4^(3)πe → 4<sup>3</sup> × π × e</li>
-									<li>4^(3πe) → 4<sup>(3×π×e)</sup></li>
-									<li>3!5 → 3! × 5</li>
-								</ul>
-							</div>
-
-							<small>
-								<button class="newbutton" onclick="myFunction2()" id="myBtn2">read more</button>
-							</small>
-
-							<br><br>
-
-							<a href="https://yogeshiitm.github.io/scientific-calculator/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open the Calculator</button></a>
-							<a href="https://github.com/yogeshiitm/scientific-calculator" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href=""><img src="images/snake-game.png" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href=""><h2>Interactive Snake Game <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Last Updated: 15th July 2021</p>
-							<ul>
-								<li>Press "Enter" to start the game</li>
-								<li>Use arrow keys of your keyboard to change the direction of the snake.</li>
-								<li>Explore the arena without bumping into walls.</li>
-								<li>Collect all the food you see, and grow your snake as big as you can imagine - there are no limits!</li>
-							</ul>
-
-							<a href="https://yogeshiitm.github.io/snake-game/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open the Game</button></a>
-							<a href="https://github.com/yogeshiitm/snake-game" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href=""><img src="images/autocomplete-search.png" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href=""><h2>Autocomplete Search <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Last Updated: 15th July 2021</p>
-							<ul>
-								<li>Created a contact list webapp to implemenet autocomplete-search using Trie data structure.</li>
-								<li>Wrote a Suffix Trie class having 3 methods - insert, delete and search a contact number.</li>
-								<li>Used DFS algo to traverse the trie & find all phone numbers which begins with the typed digits.</li>
-								<li>Displayed all matching numbers in real-time using javascript, as soon as the user starts to type.</li>
-							</ul>
-
-							<a href="https://yogeshiitm.github.io/autocomplete-search/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open</button></a>
-							<a href="https://github.com/yogeshiitm/autocomplete-search" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href=""><img src="images/chatlist.png" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href=""><h2>ChatList based on LRU-Cache <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Last Updated: 15th July 2021</p>
-							<ul>
-								<li>Implemented a chat list application using Least Recently Used (LRU) Cache class.</li>
-								<li>Used Linked list and HashMap Data structures to develop the caching system.</li>
-								<li>Inserted and retrieved key-value pairs from the chat list in constant time.</li>
-								<li>The most recently used (inserted or retrieved) key-pair value can also be accessed in O(1) time.</li>
-							</ul>
-
-							<a href="https://yogeshiitm.github.io/chatlist/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open</button></a>
-							<a href="https://github.com/yogeshiitm/snake-game" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href=""><img src="images/to-do-app.png" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href=""><h2>To-do webapp with Authentication <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Last Updated: 15th Jan 2021</p>
-							Currently working on it.
-
-						</div>
-					</div>
-
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a><img src="images/rpi.jpg" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href="/images/rpi2.jpg"><h2>Local Video Transmission and Face Detection using RPi <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
-							<p>Sept 2019 - Oct 2019</p>
-							<p>The aim of the project was transmitting video feed obtained from a web-camera using Raspberry Pi 3B, to a server far off using WiFi and the internet and then analysing the feed for Face detection.</p>
-							<button type="button" class="btn btn-light btn-outline-dark " onClick="window.location = '/pdf/Face_Detection_Using_RPi.pdf';">Technical Details</button>
-						</div>
-					</div>
-
-					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
-						<a href="/images/techsoc.jpeg"><img src="images/micromouse2.jpg" width="100%" class="round-corner2"></a>
-						<div class="px-4 pt-5 pb-4">
-							<a class="hrefWithoutDecoration" href="/images/techsoc.jpeg"><h3>IIT Madras TechSoc <small class="text-muted">| Robotics Challenge </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
-							<h6 class="result-card__subtitle">
-									<span class="education__item education__item--degree-info">Micro Mouse Maze Challenge</span>
-							</h6>
-							<p>Jan 2020 - Feb 2020</p>
-							<p>I was a member of our hostel team which participated in this inter-hostel autonomous robotics challenge at IIT Madras.<br>
-							We used arduino and ultrasonic sensors to build an autonomous, self-contained robot, The Micromouse, capable of getting to the centre of a maze from any specified point.</p>
-							<a href="/images/techsoc.jpeg" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to view the bot</button>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 	<style>
 		/* pagination */
 		.nav-links {
@@ -506,12 +306,15 @@
 	</div>
 
 
+	
+
+
 	<!-- <div class="container mx-auto mt-2 mb-5">
 		<a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo; Previous</a>
 		<a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2">Next &raquo;</a>
 	</div> -->
 
-
+    <script src="./js/indexScript.js"></script>
 	<script src="https://kit.fontawesome.com/607f62eb6e.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link href="css/styles.css" rel="stylesheet" />
