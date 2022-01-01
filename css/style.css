@@ -103,8 +103,11 @@ html {
 }
 
 .foot{
-    position: relative;
-    transform: translateY(-100%);
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-100%);/*translateX=-50,translateY=-100*/
+    /* transform: translateY(-100%); */
 }
 
 .links {
