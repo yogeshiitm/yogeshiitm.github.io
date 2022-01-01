@@ -102,6 +102,11 @@ html {
     transform: translateY(-50%);
 }
 
+.foot{
+    position: relative;
+    transform: translateY(-100%);
+}
+
 .links {
     color: #6e549b;
 }
