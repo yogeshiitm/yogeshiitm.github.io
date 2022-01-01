@@ -98,8 +98,8 @@ html {
 
 .intro {
     position: relative;
-    top: 40%;
-    transform: translateY(-40%);
+    top: 30%;
+    transform: translateY(-30%);
 }
 
 .links {
