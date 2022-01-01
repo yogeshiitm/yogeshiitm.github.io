@@ -33,7 +33,6 @@
 		img.round-corner2{
 			border-radius: 8px 8px 0 0;
 		}
-
 		
 		.onHoverDark:hover { color: white !important;}
 		.hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
@@ -48,19 +47,13 @@
 		.grow2 { transition: all .2s ease-in-out; }
 		.grow2:hover { transform: scale(1.1); }
 
-
 		#content-desktop {display: block;}
 		#content-mobile {display: none;}
 
 		@media screen and (max-width: 1024px) {
-		#content-desktop {display: none;}
-		#content-mobile {display: block;}
-
+			#content-desktop {display: none;}
+			#content-mobile {display: block;}
 		}
-		#more11 {display: none;}
-		#more12 {display: none;}
-		#more21 {display: none;}
-		#more22 {display: none;}
 
         .newbutton {
             background-color: #f8f9fa;
@@ -326,54 +319,6 @@
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="js/scripts.js"></script>
 	<a id="back-to-top" href="#" class="btn btn-secondary btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
-
-	<script>
-		function myFunction1() {
-			var dots1 = document.getElementById("dots1");
-			var moreText11 = document.getElementById("more11");
-			var moreText12 = document.getElementById("more12");
-			var btnText = document.getElementById("myBtn1");
-		
-			if (dots1.style.display === "none") {
-			dots1.style.display = "inline";
-			btnText.innerHTML = "read more";
-			// myBtn.style.display = "inline";
-			moreText11.style.display = "none";
-			moreText12.style.display = "none";
-			} 
-			else {
-			dots1.style.display = "none";
-			btnText.innerHTML = "read less";
-            //myBtn.style.display = "none";
-			moreText11.style.display = "inline";
-			moreText12.style.display = "inline";
-			}
-		}
-
-		function myFunction2() {
-			var dots2 = document.getElementById("dots2");
-			var moreText21 = document.getElementById("more21");
-			var moreText22 = document.getElementById("more22");
-			var btnText = document.getElementById("myBtn2");
-		
-			if (dots2.style.display === "none") {
-			dots2.style.display = "inline";
-			btnText.innerHTML = "read more";
-			// myBtn.style.display = "inline";
-			moreText21.style.display = "none";
-			moreText22.style.display = "none";
-			} 
-			else {
-			dots2.style.display = "none";
-			btnText.innerHTML = "read less";
-            //myBtn.style.display = "none";
-			moreText21.style.display = "inline";
-			moreText22.style.display = "inline";
-			}
-		}
-
-
-	</script>
 
 </body>
 </html>
