@@ -1,498 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<style>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Yogesh Agarwala | Electrical Engineering Student | IIT Madras" />
-        <meta name="author" content="Yogesh Agarwala" />
-        <meta name="keywords" content="yogesh, agarwal, yogesh agarwala, electrical engineering, iit madras" />
+		@media screen
+		and (max-width : 992px) {
 
-        <meta property="og:title" content="Yogesh Agarwala | Electrical Engineering Student | IIT Madras">
-        <meta property="og:image" content="/images/avataaar.png">
-        <meta property="og:description" content="Yogesh Agarwala's Portfolio">
-        <meta property="og:url" content="https://yogeshiitm.github.io/">
+			body {
+				background-image: url('images/background/background.jpg');
+			}
+			
+		}
 
-        <title>Yogesh Agarwala | IIT Madras</title>
+		#round-corner{
+			border-radius: 8px;
+		}
 
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="css/styles2.css" rel="stylesheet" />
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-        <style>
-            #body {
-                width: 100%;
-                height: 100%;
-            }
-            html{
-                width:100%;
-                height:100%;
-            }
-            body{
-                width:100%;
-                height:100%;
-                background-color: #1a252f;
-                /* background-color: #02203c; */
-            }
-            header{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+		img.round-corner2{
+			border-radius: 8px 8px 0 0;
+		}
 
 
-            .wave {
-                animation-name: wave-animation;
-                animation-duration: 2.5s;
-                animation-iteration-count: infinite;
-                display: inline-block;
-            }
-            @keyframes wave-animation {
-                0% { transform: rotate( 0.0deg) }
-                10% { transform: rotate(14.0deg) }
-                20% { transform: rotate(-8.0deg) }
-                30% { transform: rotate(14.0deg) }
-                40% { transform: rotate(-4.0deg) }
-                50% { transform: rotate(10.0deg) }
-                60% { transform: rotate( 0.0deg) }
-                100% { transform: rotate( 0.0deg) }
-            }
+		body{
+			margin:0;
+			font-family:georgia,garamond,serif;font-size:14px;
+		}
+		.onHoverDark:hover { color: white !important;}
+		.hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
+		.hrefWithoutDecoration2 {text-decoration: none !important;}
 
-            #round-corner
-            {
-                border-radius: 8px;
-            }
+		.activeCustom {color:#FFF}
+		.inactiveCustom {color:#A9A9A9}
 
-            .onHoverDark:hover { background-color:gainsboro !important;}
-            .onHoverDark2:hover { background-color:#1abc9c !important; color: white !important;}
+		.grow { transition: all .2s ease-in-out; }
+		.grow:hover { transform: scale(1.01); }
 
-            .hrefWithoutDecoration {text-decoration: none !important; color:black !important;}
-            .hrefWithoutDecoration2 {text-decoration: none !important; color:#FFF !important;}
-            .hrefWithoutDecoration3 {text-decoration: none !important;}
-
-            .activeCustom {color:#1abc9c;}
-		    .inactiveCustom {color:white;}
-
-            .grow { transition: all .2s ease-in-out; }
-            .grow:hover { transform: scale(1.05); }
-
-            .grow2 { transition: all .2s ease-in-out; }
-            .grow2:hover { transform: scale(1.5); }
+		.grow2 { transition: all .2s ease-in-out; }
+		.grow2:hover { transform: scale(1.1); }
 
 
-            .violet{
-                background-color: #626ee3;
-                color: white;
-            }
+		#content-desktop {display: block;}
+		#content-mobile {display: none;}
 
-            .black{
-                background-color: rgb(29, 29, 29);
-            }
+		@media screen and (max-width: 992px) {
+		#content-desktop {display: none;}
+		#content-mobile {display: block;}
 
-            .darkblue{
-                background-color: #02203c;
-            }
+		}
+		#more11 {display: none;}
+		#more12 {display: none;}
+		#more21 {display: none;}
+		#more22 {display: none;}
 
-            .onhoverdarkviolet:hover {
-                background-color: rgb(71, 71, 71);
-                color: white;
-            }
-
-            .newbtn {
-                padding: 10px 20px;
-                border: 1px solid #FF4081;
-                color:#FF4081;
-                display: inline-block;
-                position: relative;
-                -webkit-transition: all 0.2s ease;
-                        transition: all 0.2s ease;
-                overflow: hidden;
-            }
-            .newbtn:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                right: 0;
-                width: 1px;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                background: #FF4081;
-                -webkit-transition: -webkit-transform 0.2s ease;
-                        transition: transform 0.2s ease;
-                z-index: 0;
-                opacity: 0;
-            }
-            .newbtn span {
-                position: relative;
-                z-index: 5;
-            }
-            .newbtn:hover {
-                color: #FFF;
-            }
-            .newbtn:hover:before {
-                -webkit-transform: scaleX(200);
-                    -ms-transform: scaleX(200);
-                        transform: scaleX(200);
-                opacity: 1;
-            }
-
-            .purple-text-color {
-                /* color: rgb(204, 214, 246); */
-                color: white;
-            }
-            .red-text-color {
-                color: #FF4081 !important;
-            }
-
-        /* scrollbar */
-            ::-webkit-scrollbar {
-            width: 5px;
-            }
-
-            /* Track */
-            ::-webkit-scrollbar-track {
-            /* background:  #f1f1f1; */
-            background:  transparent;
-            }
-
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-            background: #888;
-
-            }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-            }
-
-
-            #content-desktop {display: block;}
-            #content-mobile {display: none;}
-
-
-            @media screen and (max-width: 1024px) {
-            #content-desktop {display: none;}
-            #content-mobile {display: block;}
-            }
-
-            /* this code is required for AOS animation- to avoid abnormal behavior of navbar while using AOS animaiton
-            https://github.com/michalsnik/aos/issues/481 */
-            section {
-                overflow-x: hidden;
-            }
-            body {
-                overflow-x: hidden;
-            }
-            .dropdown-content{
-                background-color: #2C3E50;
-                
-            }
-            /* Show the dropdown menu on hover */
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .dropdown-content a:hover {
-            color: #1abc9c;
-            background-color: #2C3E50;
-            }
-            .dropdown-content a {
-            font-size: 14px;
-            color:white;
+        .newbutton {
+            background-color: #f8f9fa;
+            border: none !important;
+			color: #2184E7;
+			/* color: skyblue; */
+            padding: 0px 0px;
+            text-align: center;
             text-decoration: none;
-            }
+            display: inline-block;
+			font-size: 16px;
+		}
+		.newbutton:hover{
+			color:blue;
+			background-color:#f8f9fa !important;
+		}
+		.newbutton:focus{
+			outline:none;
+		}
 
-        </style>
+	</style>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176091712-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+	<link rel="shortcut icon" type="image/jpg" href="images/yogesh_favicon_circular.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            gtag('config', 'UA-176091712-1');
-        </script>
-    </head>
-    <body id="page-top">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Yogesh Agarwala | Projects">
+	<meta name="author" content="Yogesh Agarwala">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="yogesh, agarwal, yogesh agarwala, electrical engineering, iit madras">
 
-        <nav class="navbar navbar-expand-xl bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">YOGESH AGARWALA</a>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+	<meta property="og:title" content="Yogesh Agarwala | IIT Madras">
+	<meta property="og:image" content="/images/yogesh_square.jpg">
+	<meta property="og:description" content="Yogesh Agarwala | Projects">
+	<meta property="og:url" content="https://yogeshiitm.github.io/projects">
 
-                        <li class="nav-item mx-0 mx-lg-1  py-3 px-0 px-lg-3" id="content-desktop"><a href="https://www.linkedin.com/in/yogeshiitm/" class="hrefWithoutDecoration3"> <i class="fab fa-linkedin mr-2"></i>Linkedin</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1 dropdown" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" href="/projects" data-toggle="dropdown">PORTFOLIO</a>
-                            <div class="dropdown-menu dropdown-content mt-0">
-                                <a class="dropdown-item" href="/projects">Projects</a>
-                                <a class="dropdown-item" href="/competitions">Competitions</a>
-                                <div class="dropdown-divider ml-4 mr-4"></div>
+	<title>Yogesh Agarwala | Homepage</title>
 
-                                <a class="dropdown-item" href="/achievements">Achievements</a>
-                                <a class="dropdown-item" href="/certifications">Certifications</a>
-                                <div class="dropdown-divider ml-4 mr-4"></div>
-
-                                <a class="dropdown-item" href="/education">Education</a>
-                                <a class="dropdown-item" href="/about">About ME</a>
-                            </div>
-                        </li>
-                        <!-- <li class="nav-item mx-0 mx-lg-1" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#links">LINKS</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-desktop"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
-                        </li> -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176091712-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-176091712-1');
+	</script>
 
 
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/projects">Projects</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/competitions">Competitions</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/achievements">Scholastic Achievements</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/certifications">Certifications</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/education">Education</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1" id="content-mobile"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger onHoverDark2" href="/about">About Me</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1  py-3 px-0 px-lg-3" id="content-mobile"><a href="https://www.linkedin.com/in/yogeshiitm/" class="hrefWithoutDecoration3"> <i class="fab fa-linkedin mr-2"></i>Linkedin</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+</head>
+<body>
 
-        <!-- <header id="body" class="masthead background-color text-white text-center"> -->
-        <header class="masthead background-color purple-text-color text-center" style="min-height: 100vh;">
-            <div id="content-desktop">
-                <div class="container d-flex align-items-center flex-column">
-                    <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
-                    <!-- <h3 class="masthead-heading mb-0">Hi there, I'm Yogesh<span<span class="wave">👋</span> </h3> -->
-                    <h1>Hi there, I'm Yogesh Agarwala<span class="wave">👋🏻</span> </h1>
-                    <!-- <h1 data-aos="zoom-in">Hi there, I'm Yogesh Agarwala</h1> -->
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark #101010">
+		<div class="container">
+			<a class="navbar-brand my-2" href="/" id="content-desktop">Yogesh Agarwala<small class="text-muted"></small></a>
+			<a class="navbar-brand my-2" href="/" id="content-mobile">HOMEPAGE<small class="text-muted"></small></a>
+			<button class="navbar-toggler" style="color: white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			Menu
+			<!-- <span class="navbar-toggler-icon"></span> -->
+			<i class="fas fa-bars py-2"></i>
+			</button>
 
-                    <div class="typed-strings" style="display: none">
-                        <p>Software Development Enthusiast.</p>
-                        <p>Passionate problem solver.</p>
-                        <p>An avid coder.</p>
-                    </div>
-                    <h5>
-                        <span class="typed">Soft</span><span class="typed-cursor">|</span>
-                    </h5>
-                    <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<!-- <li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/">Home&emsp;</a>
+					</li> -->
+					<li class="nav-item active">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/projects">Projects&emsp;</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/competitions">Competitions&emsp;</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/achievements">Achievements&emsp;</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/certifications">Certifications&emsp;</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/education">Education&emsp;</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" style="display: none" href="/resume">Resume&emsp;</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded onHoverDark" href="/contact">Contact Me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-                    <!-- <a href="/projects">
-                        <button class="my-3 btn violet onhoverdarkviolet">
-                            My Projects
-                        </button>
-                    </a> -->
+			
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 pt-4">
+				<!-- <div id="content-desktop"> -->
+					<div class="row py-5 px-4 bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<div class="col text-center">
+							<img class="pb-5 grow2" src="images/yogesh.jpg" width="100%" style="max-width: 200px">
+							<p>
+								<h2>Yogesh Agarwala</h2>
+								<h5><small class="text-muted"> IIT MADRAS | Electrical Engineering'23</small></h5>
+								I'm a third-year undergraduate, pursuing B.Tech in Electrical Engineering at <a href="https://twitter.com/iitmadras" style="text-decoration: none !important;">IIT Madras</a> and an upcoming Software Engineering Intern at <a href="https://twitter.com/salesforce" style="text-decoration: none !important;">Salesforce</a>. I am a keen coder, passionate problem solver and a software development enthusiast.<br>
+								<br>
+								Apart from this, I am currently working with Team Sahaay at Center For Innovation (CFI), IITM, to develop an Electronic Travel Aid that attempts to solve the real-life challenges faced by visually impaired people while travelling on the streets.<br>
+							</p>
+						</div>
+					</div>
 
-                    <a href="/projects" class="newbtn hrefWithoutDecoration2">
-                        <span>My Projects</span>
-                    </a>
-                </div>
-            </div>
-            <div id="content-mobile">
-                <div class="container d-flex align-items-center flex-column">
-                    <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
-                    <!-- <h3 class="masthead-heading mb-0">Hi there, I'm Yogesh<span class="wave">👋</span> </h3> -->
-                    <h3>Hi there, I'm Yogesh Agarwala<span class="wave">👋🏻</span> </h3>
-                    <!-- <h3 data-aos="zoom-in">Hi there, I'm Yogesh Agarwala</h3> -->
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
+					<div id="content-mobile">
+						<div class="row pt-5 pb-3 pl-3 bg-light mb-5 mt-4 shadow mx-1 grow" id="round-corner">
+							<div class="col">
+								<h4 class="pb-2">Menu</h4>
+								<hr style="width:50%;text-align:left;margin-left:0"> 	
+								<p>
+	
+									<a class="hrefWithoutDecoration" href="/projects"> Projects </a><br><br>
+									<a class="hrefWithoutDecoration" href="/achievements"> Achievements </a><br><br>
+									<a class="hrefWithoutDecoration" href="/education"> Education </a><br><br>
+									<a class="hrefWithoutDecoration" href="/contact"> Connect with me </a><br><br>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div id="content-desktop">
+					<div class="row pt-5 pb-3 pl-3 bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<div class="col">
+							<h4 class="pb-2">Contact Information</h4>
+							<p>
+		
+								<!-- <a class="hrefWithoutDecoration" href="http://yogeshiitm.github.io/"><img src="images/contact_icons/website.png" width="20px" class="grow2">  Portfolio </a><br><br> -->
+								<a class="hrefWithoutDecoration" href="https://yogeshiitm.page.link/linkedin"><img src="images/contact_icons/linkedin.png" width="16px" class="grow2">  LinkedIn </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://yogeshiitm.page.link/youtube"><img src="images/contact_icons/youtube.png" width="16px" class="grow2">  Youtube </a><br><br>
+								<a class="hrefWithoutDecoration" href="mailto:yogeshiitm@outlook.com"><img src="images/contact_icons/email.png" width="16px" class="grow2">  Email </a><br><br>
+		
+								<hr style="width:50%;text-align:left;margin-left:0">
+		
+								<a class="hrefWithoutDecoration" href="https://github.com/yogeshiitm"><img src="images/contact_icons/github.png" width="18px" class="grow2">  Github </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.codechef.com/users/yogeshiitm"><img src="images/contact_icons/codechef.png" width="20px" class="grow2">  Codechef </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.hackerrank.com/yogeshiitm"><img src="images/contact_icons/hackerrank.png" width="16px" class="grow2">   Hackerrank </a><br><br>
+								
+								<hr style="width:50%;text-align:left;margin-left:0">
+		
+								<a class="hrefWithoutDecoration" href="https://www.instagram.com/yogesh_agrwal_/"><img src="images/contact_icons/instagram.png" width="16px" class="grow2">  Instagram </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://www.facebook.com/yogeshiitm"><img src="images/contact_icons/facebook.png" width="16px" class="grow2">  Facebook </a><br><br>
+								<a class="hrefWithoutDecoration" href="https://twitter.com/yogeshiitm"><img src="images/contact_icons/twitter.png" width="16px" class="grow2">  Twitter </a><br><br>
+		
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                    <div class="typed-strings" style="display: none">
-                        <p>Software Development Enthusiast.</p>
-                        <p>Passionate problem solver.</p>
-                        <p>An avid coder.</p>
-                    </div>
-                    <h6>
-                        <span class="typed">Soft</span><span class="typed-cursor">|</span>
-                    </h6>
-                    <p class="pre-wrap masthead-subheading font-weight-light mb-3">Pursuing Electrical Engineering at IIT Madras </p>
+			<div class="col-lg-8">
+				<div id="content-desktop">
 
-                    <!-- <a href="/projects">
-                        <button class="my-3 btn violet onhoverdarkviolet">
-                            My Projects
-                        </button>
-                    </a> -->
-
-                    <a href="/projects" class="newbtn hrefWithoutDecoration2">
-                        <span>My Projects</span>
-                    </a>
-                </div>
-            </div>
-        </header>
-
-
-        <div id="content-desktop">
-            <section class="bg-secondary mt-0 pt-0">
-                <style>
-                    /* pagination */
-                    .nav-links {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center
-                    }
-            
-                    .current {
-                        /* color: #000 !important;*/ 
-                        color: #1abc9c !important;
-                    }
-
-                    .page-numbers , .dots{
-                        /* color: #6A67CE;*/ 
-                        color: white;
-                        font-size: 20px;
-                        font-family: sans-serif;
-                    }
-                    .page-numbers:hover {
-                        /* color: #2f9af2;*/
-                        color: #1abc9c;
-                        text-decoration: none;
-                    }
-                    .dots:hover {
-                        color: white !important;
-                        text-decoration: none;
-                    }
-                    /* previous/next buttons */
-                    /* .previousnext {
-                    text-decoration: none;
-                    display: inline-block;
-                    padding: 8px 16px;
-                    }
-            
-                    .previousnext:hover {
-                    background-color: #ddd;
-                    color: black;
-                    }
-            
-                    .previous {
-                    background-color: #f1f1f1;
-                    color: black;
-                    }
-            
-                    .next {
-                    background-color: black;
-                    color: white;
-                    float: right
-                    } */
-                </style>
-
-                <div class="container mb-2 mt-2">
-                    <div class="nav-links">
-                        <!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
-                        <a class="page-numbers current">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
-                        <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
-                        <a class="page-numbers" href="/competitions">3&nbsp;&nbsp; </a>
-                        <span class="page-numbers dots">…&nbsp;&nbsp;</span>
-                        <a class="page-numbers" href="/about">7&nbsp;&nbsp;&nbsp; </a>
-                        <a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
-                    </div>
-                </div>
-
-                <!-- <div class="container mx-auto mt-2 mb-5">
-                    <a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo; Previous</a>
-                    <a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2">Next &raquo;</a>
-                </div> -->
-            </section>
-        </div>
-
-        <div id="content-mobile">
-            <section class="bg-secondary mt-0 pt-0">
-                <style>
-                    /* pagination */
-                    .nav-links {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center
-                    }
-            
-                    .current {
-                        /* color: #000 !important;*/ 
-                        color: #1abc9c !important;
-                    }
-            
-                    .page-numbers , .dots{
-                        /* color: #6A67CE;*/ 
-                        color: white;
-                        font-size: 20px;
-                        font-family: sans-serif;
-                    }
-                    .page-numbers:hover {
-                        /* color: #2f9af2;*/
-                        color: #1abc9c;
-                        text-decoration: none;
-                    }
-                    .dots:hover {
-                        color: white !important;
-                        text-decoration: none;
-                    }
-                </style>
-
-                <div class="container mb-2 mt-2">
-                    <div class="nav-links">
-                        <!-- <a class="page-numbers" href="/achievements"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
-                        <a class="page-numbers current">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
-                        <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
-                        <a class="page-numbers" href="/competitions">3&nbsp;&nbsp; </a>
-                        <span class="dots">…&nbsp;&nbsp;</span>
-                        <a class="page-numbers" href="/about">7&nbsp;&nbsp;&nbsp; </a>
-                        <a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
-                    </div>
-                </div>
-            </section>
-        </div>
+					<div class="row bg-light mb-5 mt-4 shadow mx-1 grow" id="round-corner">
+						<!-- <a href="/images/flipkart_grid.jpg"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a> -->
+						<!-- <a href="https://youtu.be/0v2HDx5x9GE"><img src="images/techhd.jpg" width="100%" style="border-radius: 8px 8px 8px 8px;"></a> -->
+						<a href="https://youtu.be/0v2HDx5x9GE"><img src="images/techhd.jpg" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href="https://youtu.be/0v2HDx5x9GE"><h3>Covid-19 vaccine delivery priority <small class="text-muted">| EY Techathon  </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
+							<h6 class="result-card__subtitle">
+									<span class="education__item education__item--degree-info">Team TechHd - <a href="/images/techhd-team.jpg" style="text-decoration: none !important;">Meet the Team <i class="fa fa-external-link" style="font-size:10px"></i></a></span>
+							</h6>
+							<p>Dec 2020 – Present</p>
+							<p>Here we have tried to help the government make informed decisions around epidemiological and vaccine supply circumstances by predicting India's more critical segments that need to be catered with vaccine deliveries as prior as possible. <br>
+								● We went through various census report estimates, WHO reports, and other state websites to fetch and combine all these data features and made our datasets.<br>
+								● We then run our ML clustering algorithms through all the features and load them into our ranking algorithms (considering several metrics and features) to determine the Importance and urgency of vaccine deliveries in each state.</p>
+							<!-- <ul>
+								<li>
+									We went through various census report estimates, WHO reports, and other state websites to fetch and combine all these data features and made our datasets.
+								</li>
+								<li>
+									We then run our ML clustering algorithms through all the features and load them into our ranking algorithms (considering several metrics and features) to determine the Importance and urgency of vaccine deliveries in each state.
+								</li>
+							</ul> -->
+							<div id="content-desktop">
+								<!-- <a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View the Webapp</a> -->
+								<a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a>
+								<a href="https://github.com/yogeshiitm/EY-Techathon" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View github repository</button>
+							</div>
+							<div id="content-mobile">
+								<!-- <a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View the Webapp</a><br> -->
+								<a href="https://youtu.be/0v2HDx5x9GE" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a><br>
+								<a href="https://github.com/yogeshiitm/EY-Techathon" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View github repository</button>
+							</div>
+							
+						</div>
+					</div>
 
 
-        <!-- <div id="content-desktop">
-            <div class="copyright py-4 text-center text-white">
-                <div class="container"><small>Copyright © Yogesh Agarwala 2020</small></div>
-            </div>
-        </div> -->
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href="/images/logo.jpg"><img src="images/vision.jpg" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href="/images/poster.jpg"><h2>Project Vision: Rediscovering Mobility For Blind <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>April 2020 - Present</p>
+							The idea is to develop an Electronic Travel Aid for the Visually Challenged Peoples, to overcome the hurdles they face while using a traditional stick. It uses ultrasonic sensors and camera to detect obstacles through computer vision and then notifies the user about it through distinct vibratory patterns. And thus enables the user to determine a safe path without colliding with over-hanging and protruding objects. Further implementations of the device<span id="dots1">...</span><span id="more11"> will be:</span>
+
+							<div id="more12">
+								<br><br>
+								<ul>
+									<li><b>Potholes detection:</b><br>Pothole Detection can be done using ultrasonic sensor or an accelerometer sensor. </li>
+									<li><b>Water detection:</b><br>We will use a water sensor that activates a distinct buzzer if it detects water.</li>
+									<li><b>Navigation:</b><br>GPS+GSM module in the device will help in navigating from one place to other.</li>
+									<li><b>Locating the stick:</b><br>Installing RF module in the device and then using a mobile application we can ring a buzzer on the stick which will them to find it. </li>
+								</ul>
+							</div>
+
+							<small>
+								<button class="newbutton" onclick="myFunction1()" id="myBtn1">read more</button>
+							</small>
+							<br><br>
+							<a href="https://youtu.be/acc7wHFKoWU" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Youtube</button></a>
+							<button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/pdf/Project_Vision.pdf';">Documentation</button>
+							<a href="https://github.com/yogeshiitm/Project-Vision" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
+							<!-- <button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/pdf/Project_Vision.pdf';">Continue Reading</button> -->
+						</div>
+					</div>
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<!-- <a href="/images/flipkart_grid.jpg"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a> -->
+						<a href="https://youtu.be/XVR-wszVpO4"><img src="images/flipkart_grid2.jpg" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href=""><h3>Flipkart GRiD 2.0 <small class="text-muted">| Robotics Challenge | Semi-Finalists </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
+							<h6 class="result-card__subtitle">
+									<span class="education__item education__item--degree-info">Autonomous Pick and Place Robot</span>
+							</h6>
+							<p>June 2020 – Sept 2020</p>
+							<p>My team and I were among the 41 semi-finalists of the 1000+ teams that have participated. <br>
+							We designed a versatile picking robot, which could pick various types of small items (&#60;2kg) placed in different orientations from a grid of shelves and stow it into a designated area, without compromising on speed. </p>
+							<a href="https://youtu.be/XVR-wszVpO4" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View on Youtube</button>
+						</div>
+					</div>
 
 
-        <div class="scroll-to-top position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href="https://yogeshiitm.github.io/scientific-calculator/"><img src="images/calculator.png" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href="https://yogeshiitm.github.io/scientific-calculator/"><h2>Javascript Scientific calculator <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Last Updated: 23rd Sept 2020</p>
+							This is an online javascript scientific calculator, designed and coded by me. The input can be a <b>multiple function</b> expression, just like a physical scientific calculator. The calculator is coded to handle almost all possible errors, e.g. it will <b>automatically</b> insert a multiplication sign if you forget to write one. The back button in the calculator is also designed to work <b>smartly</b>, e.g. if the back button is pressed after doing a calculation then it will act as a clear button and will delete the entire string from the input text area, but at other times it will delete only the last character from the input expression.<span id="dots2">..</span>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="js/scripts2.js"></script>
+							<span id="more21">
 
-        <script src="./js/moot.min.js.download"></script><style>a.moot { display: none }</style>
-        <script src="./js/assets.js.download"></script>
-        <script src="./js/main.js.download"></script>
+								<span id="content-mobile">
+									<br>
+								</span>
 
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <script>
-            $(document).ready(function() {
-             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
-            });
-        </script>
+								Below are a <b>few examples</b> of how the calculator intelligently interprets a user's inputs even if proper parenthesis or multiplication signs are not used, instead of displaying an error:
+							</span>
+
+							<div id="more22">
+								<br><br>
+								<ul>
+									<li>15√(3+5!7π)sin(60°)^ln(log(5)e)7! → 15× √(3+5!×7×π) × sin(60°)<sup>ln(log(5)×e)</sup> × 7!</li>
+									<li>3sin(60×4 → 3 × sin(60×4) → 3 × sin (240)</li>
+									<li>3sin(60)4 → 3 × sin(60) ×4</li>
+									<li>4²3²√(5+6 → 4²×3²×√(5+6).</li>
+									<li>4²3²√(5)6 → 4²×3²×√(5) × 6</li>
+									<li>4%3 → 4% × 3 → 0.04 × 3</li>
+									<li>4^(3)πe → 4<sup>3</sup> × π × e</li>
+									<li>4^(3πe) → 4<sup>(3×π×e)</sup></li>
+									<li>3!5 → 3! × 5</li>
+								</ul>
+							</div>
+
+							<small>
+								<button class="newbutton" onclick="myFunction2()" id="myBtn2">read more</button>
+							</small>
+
+							<br><br>
+
+							<a href="https://yogeshiitm.github.io/scientific-calculator/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open the Calculator</button></a>
+							<a href="https://github.com/yogeshiitm/scientific-calculator" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
+						</div>
+					</div>
 
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1200,
-            })
-        </script>
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href=""><img src="images/snake-game.png" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href=""><h2>Interactive Snake Game <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Last Updated: 15th July 2021</p>
+							<ul>
+								<li>Press "Enter" to start the game</li>
+								<li>Use arrow keys of your keyboard to change the direction of the snake.</li>
+								<li>Explore the arena without bumping into walls.</li>
+								<li>Collect all the food you see, and grow your snake as big as you can imagine - there are no limits!</li>
+							</ul>
 
-    </body>
+							<a href="https://yogeshiitm.github.io/snake-game/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open the Game</button></a>
+							<a href="https://github.com/yogeshiitm/snake-game" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
+						</div>
+					</div>
+
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href=""><img src="images/autocomplete-search.png" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href=""><h2>Autocomplete Search <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Last Updated: 15th July 2021</p>
+							<ul>
+								<li>Created a contact list webapp to implemenet autocomplete-search using Trie data structure.</li>
+								<li>Wrote a Suffix Trie class having 3 methods - insert, delete and search a contact number.</li>
+								<li>Used DFS algo to traverse the trie & find all phone numbers which begins with the typed digits.</li>
+								<li>Displayed all matching numbers in real-time using javascript, as soon as the user starts to type.</li>
+							</ul>
+
+							<a href="https://yogeshiitm.github.io/autocomplete-search/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open</button></a>
+							<a href="https://github.com/yogeshiitm/autocomplete-search" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
+						</div>
+					</div>
+
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href=""><img src="images/chatlist.png" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href=""><h2>ChatList based on LRU-Cache <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Last Updated: 15th July 2021</p>
+							<ul>
+								<li>Implemented a chat list application using Least Recently Used (LRU) Cache class.</li>
+								<li>Used Linked list and HashMap Data structures to develop the caching system.</li>
+								<li>Inserted and retrieved key-value pairs from the chat list in constant time.</li>
+								<li>The most recently used (inserted or retrieved) key-pair value can also be accessed in O(1) time.</li>
+							</ul>
+
+							<a href="https://yogeshiitm.github.io/chatlist/" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to open</button></a>
+							<a href="https://github.com/yogeshiitm/snake-game" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Github</button></a>
+						</div>
+					</div>
+
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href=""><img src="images/to-do-app.png" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href=""><h2>To-do webapp with Authentication <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Last Updated: 15th Jan 2021</p>
+							Currently working on it.
+
+						</div>
+					</div>
+
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a><img src="images/rpi.jpg" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href="/images/rpi2.jpg"><h2>Local Video Transmission and Face Detection using RPi <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+							<p>Sept 2019 - Oct 2019</p>
+							<p>The aim of the project was transmitting video feed obtained from a web-camera using Raspberry Pi 3B, to a server far off using WiFi and the internet and then analysing the feed for Face detection.</p>
+							<button type="button" class="btn btn-light btn-outline-dark " onClick="window.location = '/pdf/Face_Detection_Using_RPi.pdf';">Technical Details</button>
+						</div>
+					</div>
+
+					<div class="row bg-light mb-5 shadow mx-1 grow" id="round-corner">
+						<a href="/images/techsoc.jpeg"><img src="images/micromouse2.jpg" width="100%" class="round-corner2"></a>
+						<div class="px-4 pt-5 pb-4">
+							<a class="hrefWithoutDecoration" href="/images/techsoc.jpeg"><h3>IIT Madras TechSoc <small class="text-muted">| Robotics Challenge </small><i class="fa fa-external-link" style="font-size:12px"></i></h3></a>
+							<h6 class="result-card__subtitle">
+									<span class="education__item education__item--degree-info">Micro Mouse Maze Challenge</span>
+							</h6>
+							<p>Jan 2020 - Feb 2020</p>
+							<p>I was a member of our hostel team which participated in this inter-hostel autonomous robotics challenge at IIT Madras.<br>
+							We used arduino and ultrasonic sensors to build an autonomous, self-contained robot, The Micromouse, capable of getting to the centre of a maze from any specified point.</p>
+							<a href="/images/techsoc.jpeg" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">Click to view the bot</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<style>
+		/* pagination */
+		.nav-links {
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
+
+		.current {
+			color: #000 !important;
+		}
+
+		.page-numbers{
+			color: #6A67CE;
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+		.page-numbers:hover {
+			color: #2f9af2;
+			text-decoration: none;
+		}
+
+		/* previous/next buttons */
+		/* .previousnext {
+		text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;
+		}
+
+		.previousnext:hover {
+		background-color: #ddd;
+		color: black;
+		}
+
+		.previous {
+		background-color: #f1f1f1;
+		color: black;
+		}
+
+		.next {
+		background-color: black;
+		color: white;
+		float: right
+		} */
+
+	</style>
+
+	<div class="container mb-5 mt-2">
+		<div id="content-desktop">
+			<div class="nav-links">
+				<!-- <a class="page-numbers" href="/"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
+				<a class="page-numbers current" href="/">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+				<!-- <a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a> -->
+				<a class="page-numbers" href="/achievements">2&nbsp;&nbsp; </a>
+				<span class="page-numbers dots">…&nbsp;&nbsp;</span>
+				<a class="page-numbers" href="/contact">5&nbsp;&nbsp;&nbsp; </a>
+				<a class="page-numbers" href="/achievements"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
+			</div>
+		</div>
+		<div id="content-mobile">
+			<div class="nav-links">
+				<!-- <a class="page-numbers" href="/"><i class="fa fa-chevron-left" style="font-size:36px;"></i></a> -->
+				<a class="page-numbers current" href="/">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+				<a class="page-numbers" href="/projects">2&nbsp;&nbsp; </a>
+				<a class="page-numbers" href="/achievements">3&nbsp;&nbsp; </a>
+				<span class="page-numbers dots">…&nbsp;&nbsp;</span>
+				<a class="page-numbers" href="/contact">5&nbsp;&nbsp;&nbsp; </a>
+				<a class="page-numbers" href="/projects"><i class="fa fa-chevron-right" style="font-size:36px;"></i></a>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<!-- <div class="container mx-auto mt-2 mb-5">
+		<a href="#" class="previous previousnext hrefWithoutDecoration2 px-3 py-2">&laquo; Previous</a>
+		<a href="#" class="next previousnext hrefWithoutDecoration2 px-3 py-2">Next &raquo;</a>
+	</div> -->
+
+
+	<script src="https://kit.fontawesome.com/607f62eb6e.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/scripts.js"></script>
+	<a id="back-to-top" href="#" class="btn btn-secondary btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+
+	<script>
+		function myFunction1() {
+			var dots1 = document.getElementById("dots1");
+			var moreText11 = document.getElementById("more11");
+			var moreText12 = document.getElementById("more12");
+			var btnText = document.getElementById("myBtn1");
+		
+			if (dots1.style.display === "none") {
+			dots1.style.display = "inline";
+			btnText.innerHTML = "read more";
+			// myBtn.style.display = "inline";
+			moreText11.style.display = "none";
+			moreText12.style.display = "none";
+			} 
+			else {
+			dots1.style.display = "none";
+			btnText.innerHTML = "read less";
+            //myBtn.style.display = "none";
+			moreText11.style.display = "inline";
+			moreText12.style.display = "inline";
+			}
+		}
+
+		function myFunction2() {
+			var dots2 = document.getElementById("dots2");
+			var moreText21 = document.getElementById("more21");
+			var moreText22 = document.getElementById("more22");
+			var btnText = document.getElementById("myBtn2");
+		
+			if (dots2.style.display === "none") {
+			dots2.style.display = "inline";
+			btnText.innerHTML = "read more";
+			// myBtn.style.display = "inline";
+			moreText21.style.display = "none";
+			moreText22.style.display = "none";
+			} 
+			else {
+			dots2.style.display = "none";
+			btnText.innerHTML = "read less";
+            //myBtn.style.display = "none";
+			moreText21.style.display = "inline";
+			moreText22.style.display = "inline";
+			}
+		}
+
+
+	</script>
+
+</body>
 </html>
